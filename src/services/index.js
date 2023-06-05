@@ -1,7 +1,7 @@
 import { Octokit } from "@octokit/core";
 import { useState } from "react";
 
-const isRepositoryPopular = (stars, forks) => {
+export const isRepositoryPopular = (stars, forks) => {
   return Number(stars) * 1 + Number(forks * 2) >= 500 ? true : false;
 };
 export const searchGitHubRepo = async (repoName) => {

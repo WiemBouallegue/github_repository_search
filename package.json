@@ -6,7 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
   },
   "dependencies": {
     "@octokit/core": "^4.2.1",
@@ -20,6 +26,9 @@
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",
     "autoprefixer": "^10.4.14",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^29.5.0",
+    "jest": "^29.5.0",
     "postcss": "^8.4.24",
     "react-error-overlay": "^6.0.9",
     "tailwindcss": "^3.3.2",
